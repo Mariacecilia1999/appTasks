@@ -9,10 +9,11 @@ let addTask = (e) =>{
    e.preventDefault()
    let valueTask = $('.inputTask').value
    console.log(valueTask)
-   let ulTasks = $('.showTasks')
-   ulTasks.innerHTML += `<ul>
-                           <li>${valueTask}</li>
-                         </ul>`
+   let divTasks = $('.showTasks')
+   divTasks.innerHTML += `<div>
+                           <h5>${valueTask}</h5>
+                           <button>X</button>
+                         </div>`
 } 
 
 $('.submit').addEventListener('click', addTask)
